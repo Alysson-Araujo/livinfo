@@ -14,7 +14,6 @@ public class UserEntityListener {
         user.setCreatedAt(currentDate);
         user.setUpdatedAt(currentDate);
     }
-
     @PreUpdate
     public void preUpdate(User user) {
         user.setUpdatedAt(new Date());
